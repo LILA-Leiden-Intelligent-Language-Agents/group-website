@@ -42,7 +42,7 @@ event_types:
 front_page_news: 3
 
 # Base pathname for links.
-base: '/group-website/'
+base: '/group-website'
 
 # make pages for the _projects folder
 collections:
