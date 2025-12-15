@@ -1,6 +1,5 @@
 name: LILA
 url: https://lila-leiden-intelligent-language-agents.github.io
-base: /group-website/
 author: "Niki van Stein"
 
 exclude: [bibble, README.md, Makefile, screenshot.png, vendor/, node_modules/, .github/]
@@ -43,7 +42,7 @@ event_types:
 front_page_news: 3
 
 # Base pathname for links.
-base: ''
+base: '/group-website/'
 
 # make pages for the _projects folder
 collections:
