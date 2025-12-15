@@ -1,8 +1,8 @@
-name: Natural Computing Group
-url: https://naco.liacs.nl
+name: LILA
+url: https://lila.liacs.nl
 author: "Niki van Stein"
 
-exclude: [bibble, README.md, Makefile, screenshot.png, vendor/, node_modules/, 'accept/', 'foga2025/']
+exclude: [bibble, README.md, Makefile, screenshot.png, vendor/, node_modules/, .github/]
 
 # colorize code snippets with the pygments module
 highlighter: pygments
@@ -15,7 +15,7 @@ roles:
   - key: faculty
     name: Faculty
   - key: prof
-    name: Group leader
+    name: Professor
   - key: aprof
     name: Assistant and Associate Professors
   - key: staff
@@ -71,7 +71,7 @@ navigation:
 
 # Social Sharing
 twitter:
-  username               : &twitter "naco_liacs"
+  username               : 
 facebook:
   username               :
   app_id                 :

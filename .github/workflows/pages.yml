@@ -1,4 +1,4 @@
-name: Deploy Pages (root + foga2025 + accept42 subfolder)
+name: Deploy Pages
 
 on:
   push:
@@ -23,18 +23,6 @@ jobs:
         with:
           ref: master
 
-      - name: Checkout foga2025 branch
-        uses: actions/checkout@v4
-        with:
-          ref: foga2025
-          path: foga2025
-
-      - name: Checkout accept branch
-        uses: actions/checkout@v4
-        with:
-          ref: accept
-          path: accept
-
       - uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
         with:
           ruby-version: '3.3'
@@ -48,26 +36,10 @@ jobs:
       - name: Build root site
         run: bundle exec jekyll build --destination _site --baseurl "${{ steps.pages.outputs.base_path }}"
 
-      - name: Build foga2025 site
-        working-directory: foga2025
-        run: bundle exec jekyll build --destination _site --baseurl "${{ steps.pages.outputs.base_path }}/foga2025"
-
-      - name: Install gems for accept
-        working-directory: accept
-        run: bundle install
-
-      - name: Build accept site
-        working-directory: accept
-        run: bundle exec jekyll build --destination _site --baseurl "${{ steps.pages.outputs.base_path }}/accept42"
-
       - name: Stage combined site
         run: |
           mkdir -p dist
           rsync -a _site/ dist/
-          mkdir -p dist/foga2025
-          rsync -a foga2025/_site/ dist/foga2025/
-          mkdir -p dist/accept42
-          rsync -a accept/_site/ dist/accept42/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

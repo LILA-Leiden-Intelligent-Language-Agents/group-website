@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Research in AI and Optimization
+title: Research in Agentic AI
 notitle: true
 
 header:
-    overlay_image: "naco-bg4.jpg"
+    overlay_image: "og-image.png"
     og_image: "og-image.png"
 
 # groups of columns of {roles: list, width: num, image: bool}
@@ -30,46 +30,45 @@ role-tables:
 
 
 <div class="jumbotron">
-    <h2>Welcome to the Natural Computing Cluster</h2>
+    <h2>Welcome to LILA (Leiden Intelligence Language Agents)</h2>
     <p>
-        At the <strong>Natural Computing Cluster</strong> (NaCo), part of LIACS at Leiden University, we delve into the fascinating intersection of nature-inspired computation and real-world problem-solving.
-        Our cluster integrates six special interest groups, each pushing the boundaries of Artificial Intelligence, Machine Learning, Optimization, and Data Science. 
+        LILA is a dedicated research group at the **Leiden Institute of Advanced Computer Science (LIACS)**, Leiden University, focused on pushing the boundaries of intelligent systems. We operate as a cross-disciplinary collaboration, leveraging expertise from the **Natural Computing Cluster**, the **Explainable AI (XAI) group**, the **Natural Language Processing (NLP) group**, and the **Reinforcement Learning group**.
+    </p>
+    <p>
+        Driven by **Prof. Aske Plaat** and **Dr. Niki van Stein**, our mission is to develop and analyze the next generation of **Agentic AI**—systems capable of autonomous decision-making, complex reasoning, and goal-directed actions in dynamic environments.
     </p>
 </div>
 
 <section>
-    <h2>Research areas</h2>
-    Our mission is to foster a deep understanding of natural computing and to develop innovative solutions that can address some of the world's most complex problems. 
-    By harnessing the power of nature-inspired computing, we aim to contribute to scientific advancement and create a positive impact on society.
+    <h2>Research Areas: Agentic AI and LLM Reasoning</h2>
+    Our mission centers on unlocking the full potential of Large Language Models (LLMs) and Foundation Models, transforming them from passive prediction engines into sophisticated, goal-driven agents. We focus on both the theoretical foundations and the practical application of these technologies to solve highly complex problems in optimization and decision-making.
 
-    Research in natural computing is at the core of our activities, covering theoretical foundations, the development of new algorithms, and interdisciplinary applications of natural computing methods. 
-    Our cluster focuses on a wide array of topics, combining foundational research with practical applications. These include:
+    
+
+    Our core activities cover a wide array of topics, combining foundational research with practical applications, including:
 
     <ul>
         <li>
-            <strong>Nature-Inspired Algorithms</strong>: foundational work in evolutionary computing, metaheuristics and related methodologies.
+            <strong>Agentic AI and Systems</strong>: Designing, implementing, and evaluating autonomous AI agents that utilize LLMs for planning, reasoning, and executing complex tasks. This includes developing frameworks for reliable and robust agent-to-agent and human-to-agent interaction.
         </li>
         <li>
-            <strong>Explainable AI (XAI)</strong>: Advancing fair, interpretable, and transparent AI solutions tailored to diverse industries.
+            <strong>LLM Reasoning and Cognition</strong>: Investigating the underlying mechanisms of reasoning within LLMs (e.g., chain-of-thought, self-correction), improving their logical coherence, and enhancing their capacity for complex problem-solving.
         </li>
         <li>
-            <strong>Algorithm Benchmarking and Configuration</strong>: Rigorous evaluation and fine-tuning for optimal algorithmic performance.
+            <strong>LLM-Aided Optimization and Design</strong>: Using Foundation Models and LLMs as powerful tools to guide, configure, and automate the design of traditional optimization algorithms, metaheuristics, and machine learning pipelines.
         </li>
         <li>
-            <strong>Generative AI and LLM-Aided Design</strong>: Exploring creative and automated approaches for designing algorithms.
+            <strong>Foundation Model Integration</strong>: Researching effective strategies for integrating and grounding LLMs with external knowledge bases, specialized models (e.g., computer vision, robotics), and real-time data to enhance agent performance and reliability.
         </li>
         <li>
-            <strong>Quantum Computing</strong>: Tackling optimization challenges using cutting-edge quantum methodologies.
+            <strong>Explainability and Trust in Agents (XAI)</strong>: Developing methods to ensure that the decisions and complex reasoning processes of agentic LLMs are interpretable, fair, and transparent, addressing concerns of trust and safety in high-stakes applications.
         </li>
         <li>
-            <strong>Logistics and Sustainability</strong>: Machine learning-driven solutions for supply chain, vehicle routing, and green manufacturing.
-        </li>
-        <li>
-            <strong>Multi-Objective Optimization</strong>: Efficient techniques for robust, multimodal, and scalable optimization challenges.
+            <strong>Reinforcement Learning for Language Agents</strong>: Applying RL techniques, such as Reinforcement Learning from Human Feedback (RLHF) and other alignment strategies, to fine-tune LLMs for improved agent performance, alignment with human values, and complex action selection.
         </li>
     </ul>
     
-    The driving force behind our research is the mission to increase our understanding of natural systems as models of computation, with a focus on the development of new algorithms and applications to challenging problems.
+    The driving force behind our research is the quest to understand, build, and deploy intelligent language agents that can effectively reason, adapt, and operate autonomously, pushing the frontier of Artificial General Intelligence.
 
 </section>
 
@@ -89,27 +88,12 @@ role-tables:
     {% endif %}
 </section>
 
-{% if false %}
-<section>
-    <h2>Special Interest Groups</h2>
-
-    The Natural Computing Cluster consists of a few special interest groups (SiGs). Each of these groups focuses on a different part within Natural Computing.
-    <br/>
-    <div class="group-columns">
-        {% for p in site.groups %}
-            {% if p.status != "inactive" %}
-                {% include group-card.html group=p %}
-            {% endif %}
-        {% endfor %}
-    </div>
-</section> 
-{% endif %}
 
 <section>
     <h2>Research</h2>
 
     We engage in cutting-edge research that spans a variety of disciplines. 
-    Our research cluster collaborates with international researchers and industry partners, creating a vibrant community that shares a passion for exploring the untapped potential of natural computing.
+    Our research members collaborate with international researchers and industry partners, creating a vibrant community that shares a passion for exploring the untapped potential of agentic AI.
     We are proud to be at the forefront of this dynamic field, contributing to groundbreaking discoveries and technologies.
     <br/>
     <div class="card-columns">
@@ -126,13 +110,6 @@ role-tables:
     </div>
 </section>
 
-<!-- <section>
-    <h2>Event partnerships</h2>
-    The Natural Computing Cluster is an academic partner of the <a href="https://ecta.scitevents.org/CallForPapers.aspx" target="_blank">International Conference on Evolutionary Computation Theory and Applications (ECTA)</a>. 
-    This conference intends to be a major forum for scientists, engineers and practitioners interested in the study, analysis, design, modeling and implementation of evolvable systems, both theoretically and in a broad range of application fields. ECTA welcomes both theoretical research and practical applications.
-The conference also aims to foster hybrid approaches within evolutionary computation and also involving fuzzy computation and neural computation.
-    <a href="https://ecta.scitevents.org/CallForPapers.aspx" target="_blank"><img src="/img/banne.duplor_IJCCI_2025.png" style="width:100%;"/></a> 
-</section> -->
 
 <div id="people">
     {% for role-table in page.role-tables %}
