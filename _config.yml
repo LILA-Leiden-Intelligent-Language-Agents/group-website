@@ -1,5 +1,6 @@
 name: LILA
-url: https://lila.liacs.nl
+url: https://lila-leiden-intelligent-language-agents.github.io
+base: /group-website/
 author: "Niki van Stein"
 
 exclude: [bibble, README.md, Makefile, screenshot.png, vendor/, node_modules/, .github/]
